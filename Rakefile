@@ -11,7 +11,7 @@ end
 # Change basetheme.dev to your site path
 desc 'Running Browsersync'
 task :browsersync do
-  system 'browser-sync start --proxy "basetheme.dev" --files "css/*css, js/main-dist.js" --no-inject-changes'
+  system 'browser-sync start --proxy "basetheme.dev" --files "css/*.css" --no-inject-changes'
 end
 
 desc 'Watch sass'
@@ -27,7 +27,7 @@ end
 desc 'Serve'
 task :serve do
   threads = []
-  %w{sasswatch browserify browsersync}.each do |task|
+  %w{browsersync sasswatch browserify}.each do |task|
     threads << Thread.new(task) do |devtask|
       Rake::Task[devtask].invoke
     end
