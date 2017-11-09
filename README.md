@@ -1,4 +1,5 @@
 # ThinkBase
+A base theme for Drupal 8 using Bourbon, Bitters & Neat. 
 
 ## Setup
 - Update `Rakefile` to have the correct site path
