@@ -1,6 +1,6 @@
 name: tsbase
 type: theme
-description: A base theme for ThinkShout D8 sites
+description: A base theme for D8 sites
 package: Other
 core: 8.x
 libraries:

@@ -1,11 +1,19 @@
 {
   "name": "tsbase",
   "version": "1.0.0",
-  "description": "## Setup - Update `Rakefile` to have the correct theme - Run `rake install` to install dependencies",
+  "description": "## ",
   "main": "main.js",
   "dependencies": {},
   "devDependencies": {
-    "jquery": "^2.2.3"
+    "gulp": "latest",
+    "jquery": "^2.2.3",
+    "gulp-sass": "latest",
+    "gulp-sass-bulk-import": "latest",
+    "gulp-uglify": "latest",
+    "pump": "latest",
+    "gulp-sourcemaps": "latest",
+    "browser-sync": "latest",
+    "gulp-rename": "latest"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
