@@ -53,4 +53,8 @@ gulp.task('sass:watch', function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
-gulp.task('default', [ 'sass', 'sass:watch', 'js-compress', 'js-compress:watch', 'browser-sync', 'browser-sync:watch' ]);
+gulp.task('pl-sass:watch', function () {
+  gulp.watch('./pattern-lab/source/_patterns/**/**/*.scss', ['sass']);
+});
+
+gulp.task('default', [ 'sass', 'sass:watch', 'pl-sass:watch', 'js-compress', 'js-compress:watch', 'browser-sync', 'browser-sync:watch' ]);
