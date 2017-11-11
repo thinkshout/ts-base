@@ -35,3 +35,16 @@ The following modules are recommended for any project using Pattern Lab, and can
 
 * [Component Libraries module](https://www.drupal.org/project/components)
 * [Twig Tweak](https://www.drupal.org/project/twig_tweak)
+
+# Where and How to Do Work in Pattern Lab
+The twig, sass, and javascript files pertinent to the project can be found in the `pattern-lab/source/_patterns` directory. Here you will find the following directories (and their focus areas):
+
+* `00-base`: includes the very basic elements of the site, i.e. colors, fonts, wysiwyg text styles, etc...
+* `01-components`: the next level combination of components, i.e. links, buttons, cards, heros, etc...
+* `02-regions`: components are combined to make regions, i.e. header, footer, sidebar, etc...
+* `03-templates`: tbd
+* `04-pages`: tbd
+
+We've included a couple base and component examples to help you get started.
+
+**Note: Style changes made specific for the Pattern Lab style guide can be made here without impacting your project's specific styles: `web/themes/custom/tsbase/pattern-lab/source/css/styles.css`
