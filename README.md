@@ -47,4 +47,4 @@ The twig, sass, and javascript files pertinent to the project can be found in th
 
 We've included a couple base and component examples to help you get started.
 
-**Note: Style changes made specific for the Pattern Lab style guide can be made here without impacting your project's specific styles: `web/themes/custom/tsbase/pattern-lab/source/css/styles.css`
+*Note: Style changes made specific for the Pattern Lab style guide can be made here without impacting your project's specific styles: `web/themes/custom/tsbase/pattern-lab/source/css/styles.css`*
