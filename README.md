@@ -5,6 +5,8 @@ Uses Gulp for the taskrunner. This version of TSBase has Pattern Lab added to it
 ## Setup the theme, compilers and watchers
 Download repo to themes folder, for example, `/themes/tsbase`, and run `npm install`.
 
+`git checkout tsbase-pl`, if you wish to use the Pattern Lab version of the base theme.
+
 If the repo was cloned, be sure to run `rm -rf .git` to keep from pushing project specific changes to the base theme itself.
 
 After installation, simply run `gulp` from that directory.
