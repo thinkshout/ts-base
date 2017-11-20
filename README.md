@@ -11,6 +11,8 @@ If the repo was cloned, be sure to run `rm -rf .git` to keep from pushing projec
 
 After installation, simply run `npm install` to get the necessary packages followed by `gulp` from that directory. `gulp` will initiate your compilers and watchers for the project (with the exception of the Pattern Lab tool).
 
+Once the theme has been applied to the project, be sure to go to the Appearance page in the Drupal UI and install it and set your new theme as the default.
+
 **Note: The site url will need to be updated in the `gulpfile.js` file in order to get your browsersync localhost to work.**
 
 ## Setup pattern Lab
