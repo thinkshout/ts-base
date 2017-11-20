@@ -9,7 +9,7 @@ Download repo to themes folder, for example, `/themes/tsbase`, and run `npm inst
 
 If the repo was cloned, be sure to run `rm -rf .git` to keep from pushing project specific changes to the base theme itself.
 
-After installation, simply run `gulp` from that directory.
+After installation, simply run `npm install` to get the necessary packages followed by `gulp` from that directory. `gulp` will initiate your compilers and watchers for the project (with the exception of the Pattern Lab tool).
 
 **Note: The site url will need to be updated in the `gulpfile.js` file in order to get your browsersync localhost to work.**
 
@@ -18,14 +18,9 @@ The version of Pattern Lab being used for this base theme is the [standard editi
 
 Make sure you're in your project's theme directory before running the following command:
 
-```
-composer create-project pattern-lab/edition-drupal-standard pattern-lab
-```
-
-* Select a starterkit number 2 from the menu (pattern-lab/starterkit-twig-drupal-minimal).
-* If asked about replacing files, do it.
 * `cd pattern-lab`
 * Run `composer install` from the `pattern-lab` directory.
+* If asked about replacing files, do it.
 * Run `php core/console --generate` from the `pattern-lab` directory to generate the front-end portion of Pattern Lab
 * Run `composer start` to compile Pattern Lab files and watch for any changes.
 * Go to your browser and visit your project's url (project_name.dev).
