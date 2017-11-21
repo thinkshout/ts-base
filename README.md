@@ -18,16 +18,11 @@ Once the theme has been applied to the project, be sure to go to the Appearance 
 ## Setup pattern Lab
 The version of Pattern Lab being used for this base theme is the [standard edition for Drupal](https://github.com/pattern-lab/edition-php-drupal-standard), according to the [Pattern Lab documentation](http://patternlab.io/).
 
-Make sure you're in your project's theme directory before running the following command:
-
-* `cd pattern-lab`
-* Run `composer install` from the `pattern-lab` directory.
-* If asked about replacing files, do it.
-* Run `php core/console --generate` from the `pattern-lab` directory to generate the front-end portion of Pattern Lab
-* Run `composer start` to compile Pattern Lab files and watch for any changes.
-* Go to your browser and visit your project's url (project_name.dev).
-* Tack `:8080/themes/[project_name]/pattern-lab/public/` on the end of the url and that should take you to the Pattern Lab application.
-
+* Running `gulp` from your the `ts_hsus` theme directory will initiate your Pattern Lab watches along with your project's watches.
+* Go to your browser and visit your project's url (web.hsus.dev).
+* You can find the Pattern Lab tool by heading to these links:
+  * http://web.hsus.dev:8080/themes/custom/ts_hsus/pattern-lab/public/
+  * (Browser sync) http://localhost:3000/themes/custom/ts_hsus/pattern-lab/public/
 
 # Bonus Pattern Lab Drupal Modules
 The following modules are recommended for any project using Pattern Lab, and can be added to a project's list of dependencies:
@@ -44,6 +39,12 @@ The twig, sass, and javascript files pertinent to the project can be found in th
 * `03-templates`: tbd
 * `04-pages`: tbd
 
-We've included a couple base and component examples to help you get started.
+Each component ought to have it's own directory. For example the `colors` base element will be structured as such:
 
-*Note: Style changes made specific for the Pattern Lab style guide can be made here without impacting your project's specific styles: `web/themes/custom/tsbase/pattern-lab/source/css/styles.css`*
+* `00-base/01-colors` directory, which _can_ include the following files:
+  * `colors.scss` (for Sass)
+  * `colors.js` (for JavaScript)
+  * `colors.twig` (for component specific templating)
+  * `colors.yml` (for Pattern Lab dummy data)
+
+We've included a couple base and component examples to help you get started.
