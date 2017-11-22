@@ -4,7 +4,7 @@
   "description": "## ",
   "main": "main.js",
   "dependencies": {
-    "gulp-shell": "^0.6.3",
+    "gulp-shell": "^0.6.3"
   },
   "devDependencies": {
     "gulp": "latest",

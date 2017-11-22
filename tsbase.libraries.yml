@@ -2,6 +2,6 @@ tsbase:
   version: VERSION
   css:
     theme:
-      css/style.css: {}
+      pattern-lab/source/css/style.css: {}
   js:
     js/main-dist.js: {}

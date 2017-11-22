@@ -16,3 +16,21 @@ regions:
   banner: Banner
   content: Content
   footer: Footer
+
+component-libraries:
+  base:
+    paths:
+      - pattern-lab/source/_patterns/00-base
+  components:
+    paths:
+      - pattern-lab/source/_patterns/01-components
+  layouts:
+    paths:
+      - pattern-lab/source/_patterns/02-layouts
+  templates:
+    paths:
+      - pattern-lab/source/_patterns/03-templates
+  pages:
+    paths:
+      - pattern-lab/source/_patterns/04-pages
+      

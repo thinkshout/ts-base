@@ -24,10 +24,10 @@ The version of Pattern Lab being used for this base theme is the [standard editi
   * http://web.hsus.dev:8080/themes/custom/ts_hsus/pattern-lab/public/
   * (Browser sync) http://localhost:3000/themes/custom/ts_hsus/pattern-lab/public/
 
-# Bonus Pattern Lab Drupal Modules
+# Pattern Lab Drupal Modules
 The following modules are recommended for any project using Pattern Lab, and can be added to a project's list of dependencies:
 
-* [Component Libraries module](https://www.drupal.org/project/components)
+* The [Component Libraries module](https://www.drupal.org/project/components) is required for including/extending/etc PL files into Drupal files.
 * [Twig Tweak](https://www.drupal.org/project/twig_tweak)
 
 # Where and How to Do Work in Pattern Lab
