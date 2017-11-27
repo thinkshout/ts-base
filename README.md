@@ -9,25 +9,29 @@ Download repo to themes folder, for example, `/themes/tsbase`, and run `npm inst
 
 If the repo was cloned, be sure to run `rm -rf .git` to keep from pushing project specific changes to the base theme itself.
 
-After installation, simply run `npm install` to get the necessary packages followed by `gulp` from that directory. `gulp` will initiate your compilers and watchers for the project (with the exception of the Pattern Lab tool).
-
-Once the theme has been applied to the project, be sure to go to the Appearance page in the Drupal UI and install it and set your new theme as the default.
+* `cd` into your `pattern-lab` directory and run the following commands:
+  * `composer install`
+  * Replace the contents of packages when asked.
+  * Say "Y" to updating config option for styleguideKitPath.
+  * `php core/console --generate`
+* Running `gulp` from your the `ts_hsus` theme directory will initiate your Pattern Lab watches along with your project's watches.
+* Go to your browser and visit your project's url (web.my_project.dev).
+* You can find the Pattern Lab tool by heading to these links:
+  * http://web.my_project.dev/themes/custom/ts_hsus/pattern-lab/public/
+  * (Browser sync) http://localhost:3000/themes/custom/ts_hsus/pattern-lab/public/
 
 **Note: The site url will need to be updated in the `gulpfile.js` file in order to get your browsersync localhost to work.**
 
-## Setup pattern Lab
-The version of Pattern Lab being used for this base theme is the [standard edition for Drupal](https://github.com/pattern-lab/edition-php-drupal-standard), according to the [Pattern Lab documentation](http://patternlab.io/).
+## Run all compilers and watchers
 
-* Running `gulp` from your the `ts_hsus` theme directory will initiate your Pattern Lab watches along with your project's watches.
-* Go to your browser and visit your project's url (web.hsus.dev).
-* You can find the Pattern Lab tool by heading to these links:
-  * http://web.hsus.dev:8080/themes/custom/ts_hsus/pattern-lab/public/
-  * (Browser sync) http://localhost:3000/themes/custom/ts_hsus/pattern-lab/public/
+From your `web` directory, run `cd themes/custom/ts_hsus`, and then run `npm install`.
 
-# Pattern Lab Drupal Modules
+Run `gulp` from the HSUS theme directory and that will initiate your compilers and watchers for the project.
+
+# Bonus Pattern Lab Drupal Modules
 The following modules are recommended for any project using Pattern Lab, and can be added to a project's list of dependencies:
 
-* The [Component Libraries module](https://www.drupal.org/project/components) is required for including/extending/etc PL files into Drupal files.
+* [Component Libraries module](https://www.drupal.org/project/components)
 * [Twig Tweak](https://www.drupal.org/project/twig_tweak)
 
 # Where and How to Do Work in Pattern Lab

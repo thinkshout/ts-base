@@ -21,13 +21,13 @@ gulp.task('browser-sync:watch', ['sass'], function() {
   gulp.watch("./js/main-dist.js").on('change', browserSync.reload);
   gulp.watch("./sass/**/*.scss", ['sass']);
   gulp.watch("./css/*.css").on('change', browserSync.reload);
-  gulp.watch('./pattern-lab/source/_patterns/**/**/*').on('change', function() {
+  gulp.watch('./pattern-lab/source/**/**/**/*').on('change', function() {
     return gulp.src('', {read: false})
       .pipe(shell([
         "php ./pattern-lab/core/console --generate"
       ]));
   });
-  gulp.watch('./pattern-lab/source/_patterns/**/**/*').on('change', browserSync.reload);
+  gulp.watch('./pattern-lab/source/**/**/**/*').on('change', browserSync.reload);
 });
 
 gulp.task('js-compress', function (cb) {
@@ -36,7 +36,7 @@ gulp.task('js-compress', function (cb) {
         uglify(),
         rename('main-dist.js'),
         gulp.dest('./js/'),
-        browserSync.stream(),
+        browserSync.stream()
     ],
     cb
   );
