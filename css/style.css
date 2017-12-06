@@ -1,9 +1,3 @@
-html {
-	box-sizing: border-box;
-}
-*,*::after,*::before {
-	box-sizing: inherit;
-}
 
 body {
 	-moz-osx-font-smoothing: grayscale;
@@ -16,14 +10,14 @@ h1,h2,h3,h4,h5,h6 {
 	text-rendering: optimizeLegibility;
 }
 .container {
-	max-width: 68em;
-	margin-left: auto;
-	margin-right: auto;
+	width: calc(100% - 40px);
+	float: left;
+	margin-left: 20px;
 }
 .container::after {
 	clear: both;
 	content: "";
-	display: table;
+	display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
