@@ -1,13 +1,14 @@
 'use strict';
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var bulkSass = require('gulp-sass-bulk-import');
-var uglify = require('gulp-uglify');
-var pump = require('pump');
-var rename = require("gulp-rename");
-var sourcemaps = require('gulp-sourcemaps');
-var browserSync = require('browser-sync').create();
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    purge = require('gulp-css-purge'),
+    bulkSass = require('gulp-sass-bulk-import'),
+    uglify = require('gulp-uglify'),
+    pump = require('pump'),
+    rename = require("gulp-rename"),
+    sourcemaps = require('gulp-sourcemaps'),
+    browserSync = require('browser-sync').create();
 
 gulp.task('browser-sync', function() {
     browserSync.init({
@@ -44,6 +45,7 @@ gulp.task('sass', function () {
     .pipe(sourcemaps.init())
     .pipe(bulkSass())
     .pipe(sass().on('error', sass.logError))
+    .pipe(purge())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());

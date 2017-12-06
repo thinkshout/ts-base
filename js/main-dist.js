@@ -1,0 +1,1 @@
+jQuery,Drupal,window,Drupal.behaviors.tsBase={attach:function(o,a){console.log("foo")}};

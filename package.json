@@ -1,6 +1,6 @@
 {
   "name": "tsbase",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "## ",
   "main": "main.js",
   "dependencies": {},
@@ -9,6 +9,7 @@
     "jquery": "^2.2.3",
     "gulp-sass": "latest",
     "gulp-sass-bulk-import": "latest",
+    "gulp-css-purge": "latest",
     "gulp-uglify": "latest",
     "pump": "latest",
     "gulp-sourcemaps": "latest",
