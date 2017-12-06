@@ -1,4 +1,8 @@
-.container {
-  @include grid-column(12);
-  @include grid-container;
+
+body {
+	@include grid-visual;
+}
+	.container {
+	@include grid-column(12);
+	@include grid-container;
 }

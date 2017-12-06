@@ -4,6 +4,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-style: normal;
 	font-weight: 400;
+	background-image: repeating-linear-gradient(to right, transparent, transparent 20px, rgba(0, 212, 255, 0.25) 20px, rgba(0, 212, 255, 0.25) calc(8.33333% - 21.66667px + 20px));
 }
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
