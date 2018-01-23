@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "latest",
-    "jquery": "^2.2.3",
+    "jquery": "^2.2.4",
     "gulp-sass": "latest",
     "gulp-sass-bulk-import": "latest",
     "gulp-css-purge": "latest",
