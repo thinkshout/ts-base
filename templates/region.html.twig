@@ -19,7 +19,7 @@
   ]
 %}
 {% if content %}
-<div{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(classes) }} role="{{ region|clean_class }}">
   <div class="container">
     {{ content }}
   </div>
