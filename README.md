@@ -1,4 +1,7 @@
 # TSBase
+
+Experimental theme using newer Bourbon/Neat and Gulp. Deprecated. 
+
 A base theme for Drupal 8 using Bourbon & Neat.
 Uses Gulp for the taskrunner.
 
